@@ -17,7 +17,7 @@
 
 	<div data="tasks" dhx-gantt style="height:800px; width:100%;">
 		<div gantt-template="task_text">
-			<strong>#{{task.id}}</strong>: {{task.text | uppercase}}
+			{{task.duration}}
 		</div>
 	</div>		
 
@@ -37,6 +37,12 @@
 	    {name:"add", label:"", width:44 }
 		];
 		gantt.config.grid_width = 350;
+
+		gantt.ignore_time = function(date){
+			if(date.getDay() == 0 || date.getDay() == 6)
+				return true;
+			return false;
+		};
 	</script>
 </body>
 </html>

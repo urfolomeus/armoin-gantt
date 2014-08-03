@@ -8,43 +8,50 @@ app.controller('MainGanttCtrl', function($scope) {
 
   $scope.tasks = {
     data:[
-      {"id": 1, "text": "Release 1", "start_date": "16-06-2014", "duration": 39, "progress": 0.33, "open": true},
+      {"id": 1, "text": "Release 1", "start_date": "16-06-2014", "duration": 56, "progress": 0.75, "open": true},
       
-      {"id": 2, "text": "Iteration 2", "start_date": "16-06-2014", "duration": 11, "progress": 1, "open": true, parent: 1},
-      {"id": 3, "text": "User homepage - index", "start_date": "16-06-2014", "duration": 11, "progress": 1, parent: 2},
-      {"id": 4, "text": "Uploads - images", "start_date": "16-06-2014", "duration": 11, "progress": 1, parent: 2},
+      {"id": 2, "text": "Iteration 2", "start_date": "16-06-2014", "duration": 14, "progress": 1, "open": true, parent: 1},
+      {"id": 3, "text": "User homepage - index", "start_date": "16-06-2014", "duration": 14, "progress": 1, parent: 2},
+      {"id": 4, "text": "Uploads - images", "start_date": "16-06-2014", "duration": 14, "progress": 1, parent: 2},
       
-      {"id": 5, "text": "Iteration 3", "start_date": "30-06-2014", "duration": 11, "progress": 0.43, "open": true, parent: 1},
-      {"id": 6, "text": "Uploads - add metadata", "start_date": "30-06-2014", "duration": 11, "progress": 1, parent: 5},
-      {"id": 7, "text": "User homepage - show", "start_date": "30-06-2014", "duration": 11, "progress": 1, parent: 5},
-      {"id": 8, "text": "Uploads - validation", "start_date": "30-06-2014", "duration": 11, "progress": 0, parent: 5},
+      {"id": 5, "text": "Iteration 3", "start_date": "30-06-2014", "duration": 14, "progress": 1, "open": true, parent: 1},
+      {"id": 7, "text": "User homepage - show", "start_date": "30-06-2014", "duration": 14, "progress": 1, parent: 5},
+      {"id": 148, "text": "Use Amazon S3 for storage", "start_date": "30-06-2014", "duration": 14, "progress": 1, parent: 5},
+      {"id": 149, "text": "Uploads - styling", "start_date": "30-06-2014", "duration": 14, "progress": 1, parent: 5},
       {"id": 9, "text": "Supply Category data", "start_date": "04-07-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 1, parent: 5},
-      {"id": 10, "text": "Supply Capital Collections item nos.", "start_date": "04-07-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 1, parent: 5},
-      {"id": 11, "text": "Uploads - add location information", "start_date": "30-06-2014", "duration": 11, "progress": 0, parent: 5},
-      {"id": 12, "text": "Uploads - assign a category", "start_date": "04-07-2014", "duration": 7, "progress": 0, parent: 5},
+      {"id": 150, "text": "Access further details by clicking asset", "start_date": "04-07-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 1, parent: 5},
       
-      {"id": 13, "text": "Iteration 4", "start_date": "14-07-2014", "duration": 11, "progress": 0, "open": true, parent: 1},
-      {"id": 14, "text": "Implement feedback mechanism", "start_date": "14-07-2014", "duration": 8, "progress": 0, parent: 13},
-      {"id": 15, "text": "Uploads - help tips", "start_date": "14-07-2014", "duration": 8, "progress": 0, parent: 13},
-      {"id": 16, "text": "Uploads - tagging content", "start_date": "14-07-2014", "duration": 8, "progress": 0, parent: 13},
-      {"id": 17, "text": "Authentication - Register users", "start_date": "14-07-2014", "duration": 8, "progress": 0, parent: 13},
-      {"id": 18, "text": "Browsing - asset page", "start_date": "14-07-2014", "duration": 8, "progress": 0, parent: 13},
-      {"id": 19, "text": "Browsing - content detail", "start_date": "14-07-2014", "duration": 8, "progress": 0, parent: 13},
-      {"id": 20, "text": "Create Capital Collections homepage", "start_date": "18-07-2014", "duration": 4, "progress": 0, parent: 13},
-      {"id": 21, "text": "Testing with Stakeholders", "start_date": "23-07-2014", "duration": 2, "progress": 0, parent: 13},
-      {"id": 22, "text": "v1 T&Cs", "start_date": "23-07-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 13},
+      {"id": 13, "text": "Iteration 4", "start_date": "14-07-2014", "duration": 14, "progress": 1, "open": true, parent: 1},
+      {"id": 6, "text": "Uploads - add metadata", "start_date": "14-07-2014", "duration": 14, "progress": 1, parent: 13},
+      {"id": 8, "text": "Uploads - validation", "start_date": "14-07-2014", "duration": 14, "progress": 1, parent: 13},
+      {"id": 151, "text": "Fix IE styling issues", "start_date": "14-07-2014", "duration": 14, "progress": 1, parent: 13},
+      {"id": 152, "text": "Fix mobile styling issues", "start_date": "14-07-2014", "duration": 14, "progress": 1, parent: 13},
+      {"id": 153, "text": "Fix photo rotation issues", "start_date": "14-07-2014", "duration": 14, "progress": 1, parent: 13},
       
+      {"id": 24, "text": "Iteration 5", "start_date": "28-07-2014", "duration": 14, "progress": 0, "open": true, parent: 1},
+      {"id": 17, "text": "Authentication - Register users", "start_date": "28-07-2014", "duration": 9, "progress": 0, parent: 24},
+      {"id": 18, "text": "Browsing - asset page", "start_date": "28-07-2014", "duration": 9, "progress": 0, parent: 24},
+      {"id": 19, "text": "Browsing - content detail", "start_date": "28-07-2014", "duration": 9, "progress": 0, parent: 24},
+      {"id": 11, "text": "Uploads - add location information", "start_date": "28-07-2014", "duration": 9, "progress": 0, parent: 24},
+      {"id": 14, "text": "Attribution field", "start_date": "28-07-2014", "duration": 9, "progress": 0, parent: 24},
+      {"id": 154, "text": "Change date to be more flexible", "start_date": "28-07-2014", "duration": 9, "progress": 0, parent: 24},
+      {"id": 20, "text": "Create Capital Collections homepage", "start_date": "06-08-2014", "duration": 5, "progress": 0, parent: 24},
+      {"id": 21, "text": "Testing with Stakeholders", "start_date": "11-08-2014", "duration": 5, "progress": 0, parent: 24},
+      {"id": 22, "text": "v1 T&Cs", "start_date": "08-08-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 24},
+
       
-      {"id": 23, "text": "Release 2", "start_date": "28-07-2014", "duration": 11, "progress": 0, "open": true},
+      {"id": 23, "text": "Release 2", "start_date": "11-08-2014", "duration": 14, "progress": 0, "open": true},
       
-      {"id": 24, "text": "Iteration 5", "start_date": "28-07-2014", "duration": 11, "progress": 0, "open": true, parent: 23},
-      {"id": 25, "text": "Uploads - audio", "start_date": "28-07-2014", "duration": 8, "progress": 0, parent: 24},
-      {"id": 26, "text": "Uploads - limit audio uploads", "start_date": "28-07-2014", "duration": 8, "progress": 0, parent: 24},
-      {"id": 27, "text": "Uploads - save and add another", "start_date": "28-07-2014", "duration": 8, "progress": 0, parent: 24},
-      {"id": 28, "text": "User homepage - edit", "start_date": "28-07-2014", "duration": 8, "progress": 0, parent: 24},
-      {"id": 29, "text": "User homepage - delete", "start_date": "28-07-2014", "duration": 8, "progress": 0, parent: 24},
-      {"id": 30, "text": "Testing with a range of devices", "start_date": "06-08-2014", "duration": 2, "progress": 0, parent: 24},
-      {"id": 31, "text": "Testing with Stakeholders", "start_date": "06-08-2014", "duration": 2, "progress": 0, parent: 24},
+      {"id": 155, "text": "Iteration 6", "start_date": "11-08-2014", "duration": 14, "progress": 0, "open": true, parent: 23},
+      {"id": 15, "text": "Uploads - help tips", "start_date": "11-08-2014", "duration": 9, "progress": 0, parent: 155},
+      {"id": 12, "text": "Uploads - assign a category", "start_date": "11-08-2014", "duration": 9, "progress": 0, parent: 155},
+      {"id": 28, "text": "User homepage - edit", "start_date": "11-08-2014", "duration": 9, "progress": 0, parent: 155},
+      {"id": 29, "text": "User homepage - delete", "start_date": "11-08-2014", "duration": 9, "progress": 0, parent: 155},
+      {"id": 25, "text": "Uploads - audio", "start_date": "11-08-2014", "duration": 9, "progress": 0, parent: 155},
+      {"id": 26, "text": "Uploads - limit audio uploads", "start_date": "11-08-2014", "duration": 9, "progress": 0, parent: 155},
+      {"id": 27, "text": "Uploads - save and add another", "start_date": "11-08-2014", "duration": 9, "progress": 0, parent: 155},
+      {"id": 30, "text": "Testing with a range of devices", "start_date": "20-08-2014", "duration": 5, "progress": 0, parent: 155},
+      {"id": 31, "text": "Testing with Stakeholders", "start_date": "25-08-2014", "duration": 5, "progress": 0, parent: 155},
       
       
       {"id": 32, "text": "Release 3", "start_date": "11-08-2014", "duration": 25, "progress": 0, "open": true},
@@ -68,9 +75,13 @@ app.controller('MainGanttCtrl', function($scope) {
       {"id": 48, "text": "v2 T&Cs", "start_date": "03-09-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 42},
       
 
-      {"id": 49, "text": "Release 4", "start_date": "08-09-2014", "duration": 11, "progress": 0, "open": true},
+      {"id": 49, "text": "Release 4", "start_date": "08-09-2014", "duration": 14, "progress": 0, "open": true},
       
-      {"id": 50, "text": "Iteration 8", "start_date": "08-09-2014", "duration": 11, "progress": 0, "open": true, parent: 49},
+      {"id": 50, "text": "Iteration 8", "start_date": "08-09-2014", "duration": 14, "progress": 0, "open": true, parent: 49},
+      
+      {"id": 16, "text": "Uploads - tagging content", "start_date": "08-09-2014", "duration": 8, "progress": 0, parent: 50},
+      
+
       {"id": 51, "text": "User homepage - filtering", "start_date": "08-09-2014", "duration": 8, "progress": 0, parent: 50},
       {"id": 52, "text": "Browsing - filtering", "start_date": "08-09-2014", "duration": 8, "progress": 0, parent: 50},
       {"id": 53, "text": "User homepage - searching", "start_date": "08-09-2014", "duration": 8, "progress": 0, parent: 50},
@@ -151,7 +162,7 @@ app.controller('MainGanttCtrl', function($scope) {
 
 
       {"id": 112, "text": "Memory Box", "start_date": "01-07-2014", "duration": 171, "progress": 0, "open": true},
-      {"id": 113, "text": "Speak with Scott Downie from Memory Box Network", "start_date": "01-07-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 1, parent: 112},
+      {"id": 113, "text": "Speak with Scott Downie from Memory Box Network", "start_date": "01-07-2014", "duration": 1, "progress": 1, parent: 112},
       {"id": 114, "text": "Review other potential options", "start_date": "02-07-2014", "duration": 22, "progress": 0, parent: 112},
       {"id": 115, "text": "Integrate 3rd Party apps", "start_date": "28-07-2014", "duration": 144, "progress": 0, parent: 112},
       
@@ -174,7 +185,7 @@ app.controller('MainGanttCtrl', function($scope) {
 
 
       {"id": 126, "text": "Other Projects", "start_date": "21-06-2014", "duration": 133, "progress": 0.11, "open": true},
-      {"id": 127, "text": "Code The City", "start_date": "21-06-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 1, parent: 126},
+      {"id": 127, "text": "Code The City", "start_date": "21-06-2014", "duration": 2, "progress": 1, parent: 126},
       {"id": 128, "text": "Ten Percent News", "start_date": "23-06-2014", "duration": 74, "progress": 0.11, parent: 126},
       {"id": 129, "text": "Edinburgh Hackathon", "start_date": "01-11-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 126},
       
@@ -182,31 +193,30 @@ app.controller('MainGanttCtrl', function($scope) {
 
       {"id": 130, "text": "Overhead", "start_date": "01-07-2014", "duration": 153, "progress": 0, "open": true},
       {"id": 131, "text": "Meetings", "start_date": "01-07-2014", "duration": 153, "progress": 0.17, parent: 130},
-      {"id": 132, "text": "Fellow Meeting", "start_date": "01-07-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 1, parent: 130},
-      {"id": 133, "text": "Fellow Meeting", "start_date": "03-08-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 130},
-      {"id": 134, "text": "Fellow Meeting", "start_date": "01-09-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 130},
-      {"id": 135, "text": "Fellow Meeting", "start_date": "01-10-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 130},
-      {"id": 136, "text": "Fellow Meeting", "start_date": "03-11-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 130},
-      {"id": 137, "text": "Fellow Meeting", "start_date": "01-12-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 130},
+      {"id": 132, "text": "Fellow Meeting", "start_date": "01-07-2014", "duration": 1, "progress": 1, parent: 130},
+      {"id": 133, "text": "Fellow Meeting", "start_date": "03-08-2014", "duration": 1, "progress": 0, parent: 130},
+      {"id": 134, "text": "Fellow Meeting", "start_date": "01-09-2014", "duration": 1, "progress": 0, parent: 130},
+      {"id": 135, "text": "Fellow Meeting", "start_date": "01-10-2014", "duration": 1, "progress": 0, parent: 130},
+      {"id": 136, "text": "Fellow Meeting", "start_date": "03-11-2014", "duration": 1, "progress": 0, parent: 130},
+      {"id": 137, "text": "Fellow Meeting", "start_date": "01-12-2014", "duration": 1, "progress": 0, parent: 130},
       
 
 
-      {"id": 138, "text": "Trips", "start_date": "15-07-2014", "duration": 101, "progress": 0, "open": true},
-      {"id": 139, "text": "Berlin - OKF", "start_date": "15-07-2014", "duration": 1, "progress": 0, parent: 138},
-      {"id": 140, "text": "Glasgow (TBC)", "start_date": "03-08-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 138},
-      {"id": 141, "text": "Manchester (TBC)", "start_date": "10-08-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 138},
-      {"id": 142, "text": "Helsinki (TBC)", "start_date": "01-09-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 138},
-      {"id": 143, "text": "Tiree Tech Wave (TBC)", "start_date": "23-10-2014", "duration": 1, "progress": 0, parent: 138},
+      {"id": 138, "text": "Trips", "start_date": "15-07-2014", "duration": 101, "progress": 0.2667, "open": true},
+      {"id": 139, "text": "Berlin - OKF", "start_date": "15-07-2014", "duration": 3, "progress": 1, parent: 138},
+      {"id": 141, "text": "Manchester (TBC)", "start_date": "31-07-2014", "duration": 1, "progress": 1, parent: 138},
+      {"id": 140, "text": "Glasgow (TBC)", "start_date": "03-08-2014", "duration": 1, "progress": 0, parent: 138},
+      {"id": 142, "text": "Helsinki", "start_date": "24-09-2014", "duration": 3, "progress": 0, parent: 138},
+      {"id": 143, "text": "Tiree Tech Wave", "start_date": "23-10-2014", "duration": 7, "progress": 0, parent: 138},
       
 
 
-      {"id": 144, "text": "Holidays", "start_date": "18-07-2014", "duration": 168, "progress": 0, "open": true},
-      {"id": 145, "text": "Long Weekend", "start_date": "18-07-2014", "duration": 3, "progress": 0, parent: 144},
-      {"id": 146, "text": "DConstruct", "start_date": "05-09-2014", "duration": 0, "type":gantt.config.types.milestone, "progress": 0, parent: 144},
+      {"id": 144, "text": "Holidays", "start_date": "21-07-2014", "duration": 165, "progress": 0.1667, "open": true},
+      {"id": 145, "text": "Long Weekend", "start_date": "21-07-2014", "duration": 2, "progress": 1, parent: 144},
+      {"id": 146, "text": "DConstruct", "start_date": "05-09-2014", "duration": 1, "progress": 0, parent: 144},
       {"id": 147, "text": "Christmas/New Year", "start_date": "24-12-2014", "duration": 9, "progress": 0, parent: 144}
     ],
     links:[
-      { id:3, source:3, target:4, type:"0"}
     ]};
 
 });
